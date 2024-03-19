@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <title>Типи польотів</title>
     <meta charset="UTF-8">
     <meta name="author" content="Maksym Chernenko">
-    <title>Типи польотів</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body bgcolor="#CDE4FF">
-    <h1 align="center">Типи польотів</h1>
-    
-    <!-- Navigation Menu -->
-    <h2>Навігаційне меню</h2>
+<body>
     <nav>
-        <ul>
-            <li><a href="index.html" style="color: orange;">Головна</a></li>
-            <li><a href="planes.html" style="color: orange;">Літаки</a></li>
-            <li><a href="flight_types.html" style="color: orange;">Типи польотів</a></li>
-            <li><a href="airlines.html" style="color: orange;">Авіакомпанії</a></li>
-            <li><a href="https://example.com/" style="color: orange;" target="_blank">Додаткові ресурси</a></li>
+        <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="planes.html">Літаки</a></li>
+            <li><a href="flight_types.html">Типи польотів</a></li>
+            <li><a href="airlines.html">Авіакомпанії</a></li>
+            <li><a href="https://example.com/" target="_blank">Додаткові ресурси</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <h2>Основні види польотів</h2>
-    <table border="1" cellspacing="0" cellpadding="5" align="center">
-        <tr style="font-weight: bold;">
-            <td bgcolor="#FFA07A" align="center">Пасажирські</td>
-            <td bgcolor="#FFA07A" align="center">Вантажні</td>
-            <td bgcolor="#FFA07A" align="center">Приватні</td>
+    <h1>Типи польотів</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Пасажирські</th>
+                <th>Вантажні</th>
+                <th>Приватні</th>
+            </tr>
+        </thead>
+        <tr>
+            <td><img src="Media/a350.jpg" alt="Airbus A350" width="600" height="270"></td>
+            <td><img src="Media/cargoplane.jpg" alt="Cargoplane" width="450" height="315"></td>
+            <td><img src="Media/jet.jpg" alt="Gulfstream G700" width="450" height="340"></td>
         </tr>
-        <tr align="center">
-            <td><img src="Media/a350.jpg" alt="Airbus A350" width="280" height="120"></td>
-            <td><img src="Media/cargoplane.jpg" alt="Cargoplane" width="300" height="210"></td>
-            <td><img src="Media/jet.jpg" alt="Gulfstream G700" width="240" height="180"></td>
-        </tr>
-        <tr align="center">
+        <tr>
             <td><a href="https://uk.wikipedia.org/wiki/Airbus_A350_XWB" target="_blank">Airbus A350</a></td>
             <td><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BD-225_%C2%AB%D0%9C%D1%80%D1%96%D1%8F%C2%BB" target="_blank">АН-225 "Мрія"</a></td>
             <td><a href="https://en.wikipedia.org/wiki/Gulfstream_G650/G700/G800" target="_blank">Gulfstream G700</a></td>
@@ -59,7 +58,5 @@
     <p>
         Приватні польоти надають ексклюзивність та зручність для корпоративних та особистих клієнтів. Компанії та приватні особи можуть орендувати чи володіти приватними літаками для особистих подорожей, бізнес-зустрічей, або для надання послуг аеротаксі. Приватні літаки можуть бути розкішними бізнес-джетами, як Gulfstream G700, або малими однодвигунними літаками для коротких подорожей. Ці польоти забезпечують гнучкість та приватність, що не завжди доступні на комерційних авіалініях.
     </p>
-
-
 </body>
 </html>

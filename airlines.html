@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+    <title>Airlines</title>
     <meta charset="UTF-8">
     <meta name="author" content="Maksym Chernenko">
-    <title>Airlines</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body bgcolor="#CDE4FF">
-    <h1 align="center">Авіакомпанії: факти, історія та перспективи</h1>
-    <h2>Навігаційне меню</h2>
+<body>
     <nav>
-        <ul>
-            <li><b><a href="index.html" style="color: orange;">Головна</a></b></li>
-            <li><b><a href="planes.html" style="color: orange;">Літаки</a></b></li>
-            <li><b><a href="flight_types.html" style="color: orange;">Типи польотів</a></b></li>
-            <li><b><a href="airlines.html" style="color: orange;">Авіакомпанії</a></b></li>
-            <li><b><a href="https://example.com/" style="color: orange;" target="_blank">Додаткові ресурси</a></b></li>
+        <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="planes.html">Літаки</a></li>
+            <li><a href="flight_types.html">Типи польотів</a></li>
+            <li><a href="airlines.html">Авіакомпанії</a></li>
+            <li><a href="https://example.com/" target="_blank">Додаткові ресурси</a></li>
         </ul>
     </nav>
-
+    <h1>Авіакомпанії: факти, історія та перспективи</h1>
     <h2>Вступ</h2>
     <p>
         Авіакомпанії грають ключову роль у світовій торгівлі та туризмі, забезпечуючи пасажирські та вантажні перевезення по всьому світу. Вони забезпечують не лише швидкий та зручний спосіб подорожувати, але й створюють робочі місця та сприяють економічному зростанню країн. За допомогою авіакомпаній, люди можуть долати великі відстані та відкривати для себе нові країни та культури.
     </p>
         
-    <!-- List of Major Airlines -->
     <h2>Список провідних авіакомпаній:</h2>
     <ul>
         <li><a href="#emirates">Emirates</a></li>
@@ -33,86 +31,65 @@
         <li><a href="#singapore">Singapore Airlines</a></li>
     </ul>
 
-    <table border="1" cellpadding="10" cellspacing="0" align="center">
-    <caption><b>Порівняння авіакомпаній</b></caption>
-    <colgroup>
-        <col span="2" style="background-color: #f2f2f2;">
-        <col style="background-color: #f2f2f2;">
-        <col style="background-color: #d9ead3;">
-    </colgroup>
+    <table>
     <thead>
         <tr>
-            <th rowspan="2" align="center">Авіакомпанія</th>
-            <th colspan="2" align="center">Пункти призначення</th>
-            <th rowspan="2" align="center">Тип польотів</th>
+            <th rowspan="2">Авіакомпанія</th>
+            <th colspan="2">Пункти призначення</th>
+            <th rowspan="2">Тип польотів</th>
         </tr>
         <tr>
-            <th align="center">Внутрішні</th>
-            <th align="center">Міжнародні</th>
+            <th>Внутрішні</th>
+            <th>Міжнародні</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Emirates</td>
-            <td align="center">90</td>
-            <td align="center">150</td>
-            <td align="center">Комерційні</td>
+            <td>90</td>
+            <td>150</td>
+            <td>Комерційні</td>
         </tr>
         <tr>
             <td rowspan="2">Lufthansa</td>
-            <td align="center">60</td>
-            <td align="center">100</td>
-            <td align="center">Вантажні</td>
+            <td>60</td>
+            <td>100</td>
+            <td>Вантажні</td>
         </tr>
         <tr>
-            <td align="center">80</td>
-            <td align="center">130</td>
-            <td align="center">Комерційні</td>
+            <td>80</td>
+            <td>130</td>
+            <td>Комерційні</td>
         </tr>
         <tr>
             <td>Delta Air Lines</td>
-            <td align="center">100</td>
-            <td align="center">140</td>
-            <td align="center">Комерційні</td>
+            <td>100</td>
+            <td>140</td>
+            <td>Комерційні</td>
         </tr>
         <tr>
             <td rowspan="2">Qatar Airways</td>
-            <td align="center">70</td>
-            <td align="center">120</td>
-            <td align="center">Вантажні</td>
+            <td>70</td>
+            <td>120</td>
+            <td>Вантажні</td>
         </tr>
         <tr>
-            <td align="center">95</td>
-            <td align="center">155</td>
-            <td align="center">Комерційні</td>
+            <td>95</td>
+            <td>155</td>
+            <td>Комерційні</td>
         </tr>
         <tr>
             <td>Singapore Airlines</td>
-            <td align="center">85</td>
-            <td align="center">145</td>
-            <td align="center">Комерційні</td>
+            <td>85</td>
+            <td>145</td>
+            <td>Комерційні</td>
         </tr>
     </tbody>
     </table>
         
-    <!-- Interesting Facts about Airlines -->
-    <h2>Цікаві факти про авіакомпанії</h2>
-    <ol type="1">
-        <li>Найбільша авіакомпанія за кількістю пасажирів - Delta Air Lines.</li>
-        <li>Emirates має найбільший у світі пасажирський літак - Airbus A380.</li>
-        <li>Назва "Qantas" є акронімом із слова "Queensland and Northern Territory Aerial Services".</li>
-        <li>Singapore Airlines має один з найкращих рейтингів якості обслуговування серед авіакомпаній.</li>
-    </ol>
-        
-    <!-- Future of Airlines -->
-    <h2>Майбутнє авіакомпаній</h2>
-    <p>
-        З розвитком технологій та змінами у вимогах пасажирів, авіакомпанії шукають способи покращити свої послуги та зменшити вплив на довкілля. Майбутнє авіакомпаній полягає у впровадженні нових технологій для збільшення ефективності польотів, розвитку більш екологічно чистих палив та покращення комфорту для пасажирів. Постійні зміни та інновації в галузі авіаперевезень роблять подорожі ще більш безпечними та зручними для всіх.
-    </p>
-
-    <!-- Placeholder sections for airline information with photos -->
     <section id="emirates">
     <h2>Emirates</h2>
+    <img src="Media/emirates.jpg" alt="Emirates" width="400" height="250">
     <p>
         Авіакомпанія Emirates, зі штаб-квартирою в Дубаї, Об'єднаних Арабських Еміратах, відома як один з провідних розкішних перевізників у світі, пропонує неперевершений комфорт та сервіс пасажирам по всьому світу. Заснована в 1985 році, Emirates швидко здобула популярність, ставши синонімом розкіші та вишуканості в авіаційній індустрії.
     </p>
@@ -131,12 +108,11 @@
     <p>
         Завдяки своєму присвяченню задоволенню клієнтів та невтомній прагненню до відмінності Emirates заробила безліч нагород і відзнак протягом років, закріпивши свій статус глобального лідера у розкішній авіації. Чи подорожуєте ви у справах або для відпочинку, Emirates обіцяє подорож, що перевищує очікування, встановлюючи стандарти розкішної авіації.
     </p>
-
-    <img src="Media/emirates.jpg" alt="Emirates" width="400" height="250">
     </section>
 
     <section id="lufthansa">
     <h2>Lufthansa</h2>
+    <img src="Media/lufthansa.jpg" alt="Lufthansa" width="400" height="250">
     <p>
         Lufthansa, флагманський перевізник Німеччини, відомий своєю відмінністю в обслуговуванні, безпеці та ефективності. З багатою історією, що налічує з 1955 року, Lufthansa встановила себе як одну з провідних авіакомпаній у світі, пропонуючи пасажирам вищий рівень подорожі.
     </p>
@@ -155,12 +131,11 @@
     <p>
         Мережа маршрутів Lufthansa охоплює шість континентів, з'єднуючи пасажирів з понад 220 напрямками по всьому світу. Зручні розклади та безперешкодні з'єднання роблять подорожі з Lufthansa легкими та комфортними для кожного пасажира.
     </p>
-
-    <img src="Media/lufthansa.jpg" alt="Lufthansa" width="400" height="250">
     </section>
 
     <section id="delta">
     <h2>Delta Air Lines</h2>
+    <img src="Media/delta.jpg" alt="Delta Air Lines" width="400" height="250">
     <p>
         Авіакомпанія Delta Air Lines зі штаб-квартирою в Атланті, Джорджії, є провідною глобальною авіакомпанією, відомою своєю відданістю безпеці, надійності та винятковому обслуговуванню пасажирів. Заснована в 1924 році, Delta стала однією з найбільших і найбільш поважаних авіакомпаній у світі, обслуговуючи мільйони пасажирів щорічно.
     </p>
@@ -179,13 +154,11 @@
     <p>
         Мережа маршрутів Delta охоплює шість континентів, з'єднуючи пасажирів з понад 300 напрямками по всьому світу. Незалежно від того, чи летять вони в справах чи для відпочинку, Delta пропонує широкий спектр варіантів польотів та зручних розкладів, щоб відповісти на потреби кожного пасажира.
     </p>
-
-    <img src="Media/delta.jpg" alt="Delta Air Lines" width="400" height="250">
     </section>
-
 
     <section id="qatar">
     <h2>Qatar Airways</h2>
+    <img src="Media/qatar.jpg" alt="Qatar Airways" width="400" height="250">
     <p>
         Qatar Airways, національний перевізник Катару, відомий своїм першокласним обслуговуванням, розкішними зручностями та сучасним флотом. З моменту заснування у 1993 році Qatar Airways стрімко розвинувся і став однією з найпрестижніших авіакомпаній у світі, встановивши нові стандарти в галузі якості в авіаційній індустрії.
     </p>
@@ -204,13 +177,12 @@
     <p>
         З широкою глобальною мережею, яка охоплює шість континентів, Qatar Airways з'єднує пасажирів з понад 160 напрямками по всьому світу. Незалежно від того, чи подорожуєте ви за бізнесом чи відпочиваєте, Qatar Airways забезпечує пасажирам безперервне з'єднання та неперевершений рівень розкіші, зробивши кожну подорож незабутньою.
     </p>
-
-    <img src="Media/qatar.jpg" alt="Qatar Airways" width="400" height="250">
     </section>
 
 
     <section id="singapore">
     <h2>Singapore Airlines</h2>
+    <img src="Media/singapore.jpg" alt="Singapore Airlines" width="400" height="250">
     <p>
         Singapore Airlines, національний перевізник Сінгапуру, відомі своїм зобов'язанням до відмінності, винятковим обслуговуванням та розкішними подорожами. Засновані у 1947 році, Сінгапурські авіалінії перетворилися на одну з провідних авіакомпаній світу, постійно встановлюючи нові стандарти якості та інновацій.
     </p>
@@ -229,8 +201,6 @@
     <p>
         З широкою глобальною мережею, що охоплює шість континентів, Сінгапурські авіалінії з'єднують пасажирів з понад 130 напрямками по всьому світу, роблячи їх перевізником за бажанням для пасажирів, які шукають безперервне з'єднання та неперевершений рівень розкіші. Незалежно від того, чи подорожують вони за бізнесом чи відпочивають, Сінгапурські авіалінії забезпечують, що кожна подорож стає незабутньою.
     </p>
-
-    <img src="Media/singapore.jpg" alt="Singapore Airlines" width="400" height="250">
     </section>
 
 </body>

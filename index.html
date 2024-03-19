@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <title>Homepage</title>
     <meta charset="UTF-8">
     <meta name="author" content="Maksym Chernenko">
-    <title>Польоти - Головна</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body bgcolor="#CDE4FF">
-    <h1 align="center">Польоти: Початкова сторінка</h1>
-    
-    <!-- Navigation Menu -->
-    <h2>Навігаційне меню</h2>
+<body>
     <nav>
-        <ul>
-            <li><b><a href="index.html" style="color: orange;">Головна</a></b></li>
-            <li><b><a href="planes.html" style="color: orange;">Літаки</a></b></li>
-            <li><b><a href="flight_types.html" style="color: orange;">Типи польотів</a></b></li>
-            <li><b><a href="airlines.html" style="color: orange;">Авіакомпанії</a></b></li>
-            <li><b><a href="https://example.com/" style="color: orange;" target="_blank">Додаткові ресурси</a></b></li>
+        <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="planes.html">Літаки</a></li>
+            <li><a href="flight_types.html">Типи польотів</a></li>
+            <li><a href="airlines.html">Авіакомпанії</a></li>
+            <li><a href="https://example.com/" target="_blank">Додаткові ресурси</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
+    <h1>Польоти: Початкова сторінка</h1>
     <h2>Вступ</h2>
     <p>
         Ласкаво просимо на нашу сторінку про польоти. Польоти є невід'ємною частиною сучасного світу, забезпечуючи зручний та швидкий спосіб пересування між різними місцями, як в межах країни, так і за її межами. Вони також відіграють важливу роль у розвитку міжнародних відносин, торгівлі та туризму, зближуючи різні культури та народи.
@@ -36,9 +33,7 @@
         Сучасні літаки обладнані передовими системами безпеки та навігації, зменшуючи ризик аварій та забезпечуючи безпечну подорож для кожного пасажира. Розвиток авіаційної технології робить польоти значно безпечнішими та ефективнішими. Широке поширення польотів сприяє економічному зростанню та співпраці між країнами, відкриваючи нові можливості для бізнесу та розвитку туризму.
     </p>
 
-    <!-- Embedded Wikipedia List of Aircraft -->
-    <h2>Список літаків</h2>
-    <p>Нижче подано вбудований список літаків для вашої зручності:</p>
+    <h2 id="iframeheading">Список літаків</h2>
     <iframe name="All planes list" src="https://en.wikipedia.org/wiki/List_of_aircraft_by_date_and_usage_category#Civil_air_transport" width="800" height="600" frameborder="0"></iframe>
 
 </body>
