@@ -92,7 +92,7 @@ table th, table td {
     background-color: #d4d2d2;
 }*/
 
-table > thead > tr {
+thead > tr {
     background-color: lightgray;
     font-weight: bold;
     font-size: 120%;
