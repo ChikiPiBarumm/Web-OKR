@@ -7,56 +7,60 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="planes.html">Літаки</a></li>
-            <li><a href="flight_types.html">Типи польотів</a></li>
-            <li><a href="airlines.html">Авіакомпанії</a></li>
-            <li><a href="https://example.com/" target="_blank">Додаткові ресурси</a></li>
-        </ul>
-    </nav>
+    <div class="menu-container">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="planes.html">Літаки</a></li>
+                <li><a href="flight_types.html">Типи польотів</a></li>
+                <li><a href="airlines.html">Авіакомпанії</a></li>
+                <li><a href="https://example.com/" target="_blank">Додаткові ресурси</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <h1>Типи польотів</h1>
 
-    <table>
-        <thead>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Пасажирські</th>
+                    <th>Вантажні</th>
+                    <th>Приватні</th>
+                </tr>
+            </thead>
             <tr>
-                <th>Пасажирські</th>
-                <th>Вантажні</th>
-                <th>Приватні</th>
+                <td><img src="Media/a350.jpg" alt="Airbus A350" width="600" height="270"></td>
+                <td><img src="Media/cargoplane.jpg" alt="Cargoplane" width="450" height="315"></td>
+                <td><img src="Media/jet.jpg" alt="Gulfstream G700" width="450" height="340"></td>
+                </tr>
+            <tr>
+                <td><a href="https://uk.wikipedia.org/wiki/Airbus_A350_XWB" target="_blank">Airbus A350</a></td>
+                <td><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BD-225_%C2%AB%D0%9C%D1%80%D1%96%D1%8F%C2%BB" target="_blank">АН-225 "Мрія"</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Gulfstream_G650/G700/G800" target="_blank">Gulfstream G700</a></td>
             </tr>
-        </thead>
-        <tr>
-            <td><img src="Media/a350.jpg" alt="Airbus A350" width="600" height="270"></td>
-            <td><img src="Media/cargoplane.jpg" alt="Cargoplane" width="450" height="315"></td>
-            <td><img src="Media/jet.jpg" alt="Gulfstream G700" width="450" height="340"></td>
-        </tr>
-        <tr>
-            <td><a href="https://uk.wikipedia.org/wiki/Airbus_A350_XWB" target="_blank">Airbus A350</a></td>
-            <td><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BD-225_%C2%AB%D0%9C%D1%80%D1%96%D1%8F%C2%BB" target="_blank">АН-225 "Мрія"</a></td>
-            <td><a href="https://en.wikipedia.org/wiki/Gulfstream_G650/G700/G800" target="_blank">Gulfstream G700</a></td>
-        </tr>
-        <tr>
-            <td>Комерційні авіалінії, чартерні польоти</td>
-            <td>Вантажні авіалінії, логістичні перевізники</td>
-            <td>Приватні літаки, корпоративні повітряні судна</td>
-        </tr>
-    </table>
+            <tr>
+                <td>Комерційні авіалінії, чартерні польоти</td>
+                <td>Вантажні авіалінії, логістичні перевізники</td>
+                <td>Приватні літаки, корпоративні повітряні судна</td>
+            </tr>
+        </table>
+    </div>
 
     <h2>Комерційні Польоти</h2>
     <p>
-        Комерційні польоти є основним видом авіаційної діяльності, забезпечуючи мільйонам пасажирів швидкий та зручний спосіб пересування. Авіакомпанії, такі як "Lufthansa", "Emirates", "Delta Airlines", пропонують різні класи обслуговування, від економічного до першого класу, а також широкий спектр послуг, включаючи ресторани, розваги та комфортні сидіння. Комерційні польоти можуть бути регулярними рейсами або чартерними польотами, які організовуються для спеціальних подій або групових подорожей.
+        <span class="highlight">Комерційні польоти</span> є основним видом авіаційної діяльності, забезпечуючи мільйонам пасажирів <span class="highlight">швидкий та зручний спосіб пересування</span>. Авіакомпанії, такі як <span class="highlight">"Lufthansa", "Emirates", "Delta Airlines"</span>, пропонують різні класи обслуговування, від економічного до першого класу, а також широкий спектр послуг, включаючи ресторани, розваги та комфортні сидіння. Комерційні польоти можуть бути <span class="highlight">регулярними рейсами</span> або <span class="highlight">чартерними польотами</span>, які організовуються для спеціальних подій або групових подорожей.
     </p>
 
     <h2>Вантажні Польоти</h2>
     <p>
-        Вантажні польоти відіграють ключову роль у світовій торгівлі, забезпечуючи доставку товарів на великі відстані. Вантажні авіалінії, такі як "UPS Airlines", "FedEx Express", спеціалізуються на перевезенні різноманітних товарів, від легких посилок до важких вантажів та навіть живої тварини. Ці польоти забезпечують швидку та ефективну доставку вантажів, використовуючи спеціальні літаки та системи логістики.
+        <span class="highlight">Вантажні польоти</span> відіграють ключову роль у світовій торгівлі, забезпечуючи доставку товарів на <span class="highlight">великі відстані</span>. Вантажні авіалінії, такі як <span class="highlight">"UPS Airlines", "FedEx Express"</span>, спеціалізуються на перевезенні різноманітних товарів, від легких посилок до важких вантажів та навіть <span class="highlight">живої тварини</span>. Ці польоти забезпечують <span class="highlight">швидку та ефективну</span> доставку вантажів, використовуючи <span class="highlight">спеціальні літаки</span> та системи логістики.
     </p>
 
     <h2>Приватні Польоти</h2>
     <p>
-        Приватні польоти надають ексклюзивність та зручність для корпоративних та особистих клієнтів. Компанії та приватні особи можуть орендувати чи володіти приватними літаками для особистих подорожей, бізнес-зустрічей, або для надання послуг аеротаксі. Приватні літаки можуть бути розкішними бізнес-джетами, як Gulfstream G700, або малими однодвигунними літаками для коротких подорожей. Ці польоти забезпечують гнучкість та приватність, що не завжди доступні на комерційних авіалініях.
+        <span class="highlight">Приватні польоти</span> надають ексклюзивність та зручність для корпоративних та особистих клієнтів. <span class="highlight">Компанії та приватні особи</span> можуть орендувати чи володіти приватними літаками для особистих подорожей, бізнес-зустрічей, або для надання послуг <span class="highlight">аеротаксі</span>. Приватні літаки можуть бути розкішними бізнес-джетами, як <span class="highlight">Gulfstream G700</span>, або малими однодвигунними літаками для коротких подорожей. Ці польоти забезпечують <span class="highlight">гнучкість та приватність</span>, що не завжди доступні на комерційних авіалініях.
     </p>
 </body>
 </html>

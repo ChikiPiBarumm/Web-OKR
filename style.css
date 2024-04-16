@@ -23,9 +23,9 @@ h1 + h2 {
 }
 
 #iframeheading {
-	color: #000;
-	text-align: center;
-	text-decoration: underline;
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
 }
 
 p {
@@ -34,7 +34,23 @@ p {
 
 a {
     text-decoration: none;
+}
+
+a:link {
     color: #333;
+}
+
+a:visited {
+    color: #4682B4;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000cc;
 }
 
 ul {
@@ -47,14 +63,32 @@ ol {
     margin-left: 20px;
 }
 
-nav {
+.highlight {
+    font-weight: bold;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
     z-index: 1000;
 }
 
@@ -65,34 +99,47 @@ nav {
     text-align: center;
 }
 
-nav ul li {
+.menu li {
     display: inline;
     margin-right: 15px;
 }
 
-nav ul li a {
+.menu li:first-child {
+    font-weight: bold;
+}
+
+.menu li a {
     color: #fff;
     text-decoration: none;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.menu li a:hover {
+    color: #4682B4;
+    text-decoration: underline;
 }
 
-table th, table td {
+.content {
+    margin-top: 50px;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container table th,
+.table-container table td {
     border: 1px solid #000;
     padding: 8px;
     text-align: center;
 }
 
-/*table th {
-    font-size: 120%;
-    background-color: #d4d2d2;
-}*/
-
-thead > tr {
+.table-container thead > tr {
     background-color: lightgray;
     font-weight: bold;
     font-size: 120%;
@@ -110,6 +157,16 @@ section h2 {
     margin-bottom: 10px;
 }
 
+section h2:before {
+    content: "✈️";
+    margin-right: 5px;
+}
+
+section h2:after {
+    content: "✈️";
+    margin-left: 5px;
+}
+
 section p {
     color: #555;
 }
@@ -121,8 +178,9 @@ img {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 section img {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 iframe {
