@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Maksym Chernenko">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="menu-container">
@@ -15,6 +16,7 @@
                 <li><a href="flight_types.html">Типи польотів</a></li>
                 <li><a href="airlines.html">Авіакомпанії</a></li>
                 <li><a href="https://example.com/" target="_blank">Додаткові ресурси</a></li>
+                <button onclick="redirect()">Перенаправити</button>
             </ul>
         </nav>
     </div>
@@ -35,8 +37,25 @@
         Сучасні літаки обладнані передовими системами безпеки та навігації, зменшуючи ризик аварій та забезпечуючи безпечну подорож для кожного пасажира. Розвиток авіаційної технології робить польоти значно безпечнішими та ефективнішими. Широке поширення польотів сприяє економічному зростанню та співпраці між країнами, відкриваючи нові можливості для бізнесу та розвитку туризму.
     </p>
 
+    <h2>Порівняння рядків</h2>
+    <form>
+        <input type="text" id="str1" name="str1"><br><br>
+        
+        <input type="text" id="str2" name="str2"><br><br>
+        
+        <button type="button" onclick="compareAndAlert()">Порівняти</button>
+    </form>
+
+    <h2>Зміна фону сторінки</h2>
+    <p>Натисніть кнопку, щоб змінити фон сторінки на 5 секунд.</p>
+    <button onclick="changeBackground()">Змінити фон</button>
+
     <h2 id="iframeheading">Список літаків</h2>
     <iframe name="All planes list" src="https://en.wikipedia.org/wiki/List_of_aircraft_by_date_and_usage_category#Civil_air_transport" width="800" height="600" frameborder="0"></iframe>
 
+    <div style="text-align: center;">
+        <button onclick="displayDeveloperInfo('Прізвище', 'Ім\'я')">Показати інформацію про розробника</button>
+    </div>
+ 
 </body>
 </html>

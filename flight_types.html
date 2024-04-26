@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Maksym Chernenko">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="menu-container">
@@ -62,5 +63,31 @@
     <p>
         <span class="highlight">Приватні польоти</span> надають ексклюзивність та зручність для корпоративних та особистих клієнтів. <span class="highlight">Компанії та приватні особи</span> можуть орендувати чи володіти приватними літаками для особистих подорожей, бізнес-зустрічей, або для надання послуг <span class="highlight">аеротаксі</span>. Приватні літаки можуть бути розкішними бізнес-джетами, як <span class="highlight">Gulfstream G700</span>, або малими однодвигунними літаками для коротких подорожей. Ці польоти забезпечують <span class="highlight">гнучкість та приватність</span>, що не завжди доступні на комерційних авіалініях.
     </p>
+<!--
+    <h2>Тестуваня змін в документі</h2>
+        <div>
+            <button onclick="manipulateDocument('write')">Внесення змін document.write</button>
+            <button onclick="manipulateDocument('createElement')">Створення нових елементів та текстового вузла</button>
+            <button onclick="manipulateDocument('removeButton')">Видалення кнопки "Додаткові ресурси"</button>
+        </div>
+        <div>
+            <button onclick="manipulateDocument('replaceText')">Зміна тексту заголовку h1</button>
+            <button onclick="manipulateDocument('addListItem')">Додавання нового пункту списку</button>
+            <button onclick="manipulateDocument('addSection')">Додавання нового розділу перед другим заголовком h2</button>
+        </div>
+-->
+    <script>
+        var confirmation = confirm("Тобі подобається світ авіаперельотів?");
+        if (confirmation === true) {
+            setTimeout(function() {
+                alert("Супер! Ти як раз попав туди куди треба!");
+            }, 500);
+        } else {
+            setTimeout(function() {
+                alert("Прикро це чути. Але сподіваюсь, що ти знайдеш тут щось цікаве.");
+            }, 500);
+        }
+    </script>
+    
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Maksym Chernenko">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
     <style>
         a {
             color: darkblue;
@@ -26,7 +27,7 @@
     </div>
 
     <h1>Літаки: факти, види та майбутнє</h1>
-    <h2>Вступ</h2>
+        <h2>Вступ</h2>
         <p style="font-style: italic;">
             Літаки є невід'ємною частиною нашого сучасного життя та грають ключову роль у забезпеченні швидкого та зручного способу пересування. Вони дозволяють подорожувати як в межах країни, так і міжнародно, зменшуючи відстані та забезпечуючи глобальну зв'язаність. Літаки також використовуються у важливих галузях, таких як торгівля, туризм, медична допомога та гуманітарні місії, що робить їх незамінними для розвитку світу.
         </p>
@@ -39,6 +40,10 @@
             <li><a href="#airbus380">Airbus A380</a></li>
             <li><a href="#embraer190">Embraer E190</a></li>
         </ul>
+
+        <div style="text-align: left;">
+            <button onclick="dialogueWithUser()">Діалог з сайтом</button>
+        </div>
         
         <h2>Цікаві факти про літаки</h2>
         <ol>
@@ -52,6 +57,27 @@
         <p>
             З кожним роком технології літаків продовжують розвиватися, надаючи нові можливості та покращення. Майбутнє авіації полягає в ефективніших, екологічно чистих літаках, використанні альтернативних палив та інноваційних конструкціях. Постійні дослідження та розвиток дозволять нам подорожувати безпечно та стабільно, відкриваючи нові можливості для зв'язку, торгівлі та співпраці у всьому світі.
         </p>
+
+        <h2>Створити опис нового літака</h2>
+        <div>
+            <button onclick="propertiesDom('inner')">Використовуючи innerHTML</button>
+            <button onclick="propertiesDom('outer')">Використовуючи outerHTML</button>
+            <button onclick="propertiesDom('heading')">Створити новий заголовок</button>
+            <button onclick="propertiesDom('content')">Створити новий опис</button>
+        </div>
+
+    <section id="testplane">
+        <h2>Test Plane</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac odio et orci elementum auctor. Quisque non turpis bibendum, accumsan nulla nec, interdum nisl. Aenean non maximus augue. Nulla quis ligula nec orci consequat posuere vel eget enim. Nunc lacinia eget lectus id vulputate. Sed nec urna ipsum. Pellentesque eget ligula nulla. Fusce pharetra dapibus condimentum. Suspendisse potenti.
+        </p>
+        <p>
+            Ut erat metus, tempus ut vehicula ac, suscipit ut nibh. Quisque eget semper velit. Nam sodales lobortis sapien, in facilisis ligula lobortis laoreet. Ut nec bibendum libero. Nulla non lorem rutrum, convallis leo id, lacinia velit. Suspendisse mollis rutrum mauris, in rutrum augue imperdiet a. Integer massa arcu, porttitor non vestibulum sed, consectetur eu purus.
+        </p>
+        <p>
+            Vivamus tincidunt mauris massa, vitae auctor dui tristique vitae. Nunc tellus urna, interdum et enim vitae, cursus aliquet mi. Vestibulum vitae lectus odio. Pellentesque in rhoncus lorem. Suspendisse nibh diam, efficitur vitae interdum et, finibus quis ante. Morbi posuere lectus lorem, eget hendrerit nibh suscipit quis. Curabitur dui lorem, imperdiet at leo a, consequat tincidunt ex. Mauris risus libero, gravida et suscipit id, sagittis quis tortor. Phasellus quis euismod turpis, at consequat ante. Praesent id diam eget enim egestas tristique vitae eget quam.
+        </p>
+    </section>
 
     <section id="boeing737">
         <h2>Boeing 737</h2>
@@ -174,5 +200,18 @@
             При тому, що авіаційна галузь продовжує розвиватися, Embraer E190 залишається надійним і впевненим вибором для авіакомпаній по всьому світу, пропонуючи виграшну комбінацію продуктивності, комфорту та ефективності. З відомими успішними результатами та зобов'язанням до інновацій, E190 готовий залишатися провідним гравцем на ринку регіональних літаків на протязі багатьох років.
         </p>
     </section>
+
+    <h2>Тестуваня змін в документі</h2>
+        <div>
+            <button onclick="manipulateDocument('write')">Внесення змін document.write</button>
+            <button onclick="manipulateDocument('createElement')">Створення нових елементів та текстового вузла</button>
+            <button onclick="manipulateDocument('removeButton')">Видалення кнопки "Додаткові ресурси"</button>
+        </div>
+        <div>
+            <button onclick="manipulateDocument('replaceText')">Зміна тексту заголовку h1</button>
+            <button onclick="manipulateDocument('addListItem')">Додавання нового пункту списку</button>
+            <button onclick="manipulateDocument('addSection')">Додавання нового розділу перед другим заголовком h2</button>
+        </div>
+    
 </body>
 </html>
