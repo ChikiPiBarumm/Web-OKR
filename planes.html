@@ -45,14 +45,36 @@
             <button onclick="dialogueWithUser()">Діалог з сайтом</button>
         </div>
         
-        <h2>Цікаві факти про літаки</h2>
-        <ol>
+        <!--
+        <button id="dialogueButton">Діалог з сайтом</button>
+        <script>
+            document.getElementById('dialogueButton').onclick = dialogueWithUser;
+        </script>
+        --->
+
+        <h2 data-hover="facts">Цікаві факти про літаки</h2>
+        <ol id="facts" class="hidden">
             <li>Перший успішний пілотований польот відбувся в 1903 році за участю братів Райт.</li>
             <li>Літак Boeing 747 має крила довжиною більше 6 поверхів будинків.</li>
             <li>Самий швидкий пасажирський літак у світі - Concorde, мав максимальну швидкість більше 2 Мах.</li>
             <li>Перший літак, який перевищив швидкість звука, був розроблений у 1947 році (Bell X-1).</li>
         </ol>
         
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var toggler = document.querySelector('[data-hover="facts"]');
+                var list = document.getElementById('facts');
+
+                toggler.addEventListener('mouseenter', function() {
+                  list.classList.remove('hidden');
+                });
+
+                toggler.addEventListener('mouseleave', function() {
+                  list.classList.add('hidden');
+                });
+            });
+        </script>
+
         <h2>Майбутнє Авіації</h2>
         <p>
             З кожним роком технології літаків продовжують розвиватися, надаючи нові можливості та покращення. Майбутнє авіації полягає в ефективніших, екологічно чистих літаках, використанні альтернативних палив та інноваційних конструкціях. Постійні дослідження та розвиток дозволять нам подорожувати безпечно та стабільно, відкриваючи нові можливості для зв'язку, торгівлі та співпраці у всьому світі.
@@ -212,6 +234,41 @@
             <button onclick="manipulateDocument('addListItem')">Додавання нового пункту списку</button>
             <button onclick="manipulateDocument('addSection')">Додавання нового розділу перед другим заголовком h2</button>
         </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Створюємо об'єкт, який реалізує інтерфейс EventListener
+            var eventHandler = {
+                // Реалізуємо метод handleEvent
+                handleEvent: function(event) {
+                    // Виводимо поточний елемент, на якому спрацював обробник події
+                    console.log("Елемент, на якому спрацював обробник події:", event.currentTarget);
+                }
+            };
+
+            // Отримуємо всі кнопки на веб-сторінці
+            var buttons = document.querySelectorAll("button");
+
+            // Додаємо обробник подій до кожної кнопки
+            buttons.forEach(function(button) {
+                button.addEventListener("click", eventHandler);
+            });
+
+            // Отримуємо кнопку "Діалог з сайтом"
+            var dialogueButton = document.querySelector("button");
+
+            // Додаємо обробник подій до кнопки "Діалог з сайтом"
+            dialogueButton.addEventListener("click", eventHandler);
+
+            // Приклад видалення обробника подій тільки для кнопки "Діалог з сайтом"
+            setTimeout(function() {
+                // Видаляємо обробник подій для кнопки "Діалог з сайтом"
+                dialogueButton.removeEventListener("click", eventHandler);
+                console.log("Обробник подій для кнопки 'Діалог з сайтом' був видалений");
+            }, 5000); // Через 5 секунд
+        });
+    </script>
     
 </body>
 </html>

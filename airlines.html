@@ -26,7 +26,7 @@
     </p>
         
     <h2>Список провідних авіакомпаній:</h2>
-    <ul>
+    <ul id="airlines">
         <li><a href="#emirates">Emirates</a></li>
         <li><a href="#lufthansa">Lufthansa</a></li>
         <li><a href="#delta">Delta Air Lines</a></li>
@@ -34,10 +34,33 @@
         <li><a href="#singapore">Singapore Airlines</a></li>
     </ul>
 
+    <script>
+    // Отримуємо посилання на список
+    var airlineList = document.getElementById('airlines');
+
+    // Додаємо обробник подій для кліку на список
+    airlineList.onclick = function(event) {
+        // Перевіряємо, чи клікнуто на елемент списку
+        if (event.target.tagName === 'A') {
+            // Знімаємо підсвічування з усіх елементів списку
+            var links = airlineList.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].classList.remove('highlighted');
+            }
+            // Підсвічуємо клікнутий елемент
+            event.target.classList.add('highlighted');
+        }
+    };
+    </script>
+
     <h2>Змінити колір посилань</h2>
-    <button onclick="linkRecolor('red')">Червоний</button>
-    <button onclick="linkRecolor('green')">Зелений</button>
-    <button onclick="linkRecolor('blue')">Синій</button>
+    <button class="recolor-btn" data-color="blue">Blue</button>
+    <button class="recolor-btn" data-color="green">Green</button>
+    <button class="recolor-btn" data-color="red">Red</button>
+    <button class="recolor-btn" data-color="orange">Orange</button>
+    <button class="recolor-btn" data-color="purple">Purple</button>
+
+    <script>linkRecolor()</script>
 
     <div class="table-container">
         <table>

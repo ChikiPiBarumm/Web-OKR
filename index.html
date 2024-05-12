@@ -56,6 +56,32 @@
     <div style="text-align: center;">
         <button onclick="displayDeveloperInfo('Прізвище', 'Ім\'я')">Показати інформацію про розробника</button>
     </div>
- 
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Отримуємо елемент кнопки
+        var button = document.querySelector("button");
+
+        // Додаємо обробник подій для події кліку
+        button.addEventListener("click", function() {
+            // Обробляємо подію кліку
+            console.log("Клік на кнопці!");
+        });
+
+        // Додаємо обробник подій для іншої дії
+        button.addEventListener("mouseover", function() {
+            // Обробляємо подію наведення миші
+            console.log("Мишка над кнопкою!");
+        });
+
+        // Додаємо обробник подій для ще однієї дії
+        button.addEventListener("mouseout", function() {
+            // Обробляємо подію виходу миші з кнопки
+            console.log("Мишка покинула кнопку!");
+        });
+    });
+    </script>
+
+
 </body>
 </html>

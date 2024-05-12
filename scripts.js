@@ -49,11 +49,15 @@ function redirect() {
 }
 
 function linkRecolor(color) {
-    var links = document.querySelectorAll('ul > li > a');
-
-    links.forEach(function(link) {
-        link.style.color = color;
-    });
+    document.querySelectorAll('.recolor-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var color = this.getAttribute('data-color');
+                var links = document.querySelectorAll('ul > li > a');
+                links.forEach(function(link) {
+                    link.style.color = color;
+                });
+            });
+        });
 }
 
 function propertiesDom(option){
