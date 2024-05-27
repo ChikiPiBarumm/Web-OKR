@@ -8,7 +8,7 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <div class="menu-container">
+    <div class="menu-container" id="menu-container">
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Головна</a></li>
@@ -75,7 +75,7 @@
             <button onclick="manipulateDocument('addListItem')">Додавання нового пункту списку</button>
             <button onclick="manipulateDocument('addSection')">Додавання нового розділу перед другим заголовком h2</button>
         </div>
--->
+
     <script>
         var confirmation = confirm("Тобі подобається світ авіаперельотів?");
         if (confirmation === true) {
@@ -87,6 +87,36 @@
                 alert("Прикро це чути. Але сподіваюсь, що ти знайдеш тут щось цікаве.");
             }, 500);
         }
+    </script>
+-->
+    <script>
+        document.querySelectorAll('td').forEach(td => {
+            td.addEventListener('mouseover', event => {
+                event.target.classList.add('highlight');
+            });
+
+            td.addEventListener('mouseout', event => {
+                event.target.classList.remove('highlight');
+            });
+        });
+    </script>
+
+    <script>
+        // Додаємо обробники подій для елементів меню
+        const menuItems = document.querySelectorAll('.menu li a');
+        const menuContainer = document.getElementById('menu-container');
+
+        menuItems.forEach(menuItem => {
+            menuItem.addEventListener('mouseover', event => {
+                event.target.classList.add('highlight-menu');
+            });
+            menuContainer.addEventListener('mouseout', event => {
+                const related = event.relatedTarget;
+                if (!menuContainer.contains(related)) {
+                    menuItems.forEach(item => item.classList.remove('highlight-menu'));
+                }
+            });
+        });
     </script>
     
 </body>
